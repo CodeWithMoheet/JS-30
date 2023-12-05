@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="myH"></h1>
+    <p id="myP"></p>
+
+    <h1>Date</h1>
+    <!-- 1st way -->
+    <!-- 
+    <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button> -->
+
+    <button class="btn" type="button" onclick="myFunction()">Check date here</button>
+    <p id="demo"></p>
+
+    <script>
+        // 2nd way
+        // function myFunction() {
+        //     document.getElementById('demo').innerHTML = Date();
+
+        // }
+        // 3rd way
+        myFunction = () =>{
+        setInterval(function() {
+        // myFunction = () => {
+            document.getElementById('demo').innerHTML = Date();
+        // }
+       }, 1000);
+    }
+
+        // Change heading:
+        document.getElementById("myH").innerHTML = "JavaScript Comments";
+        // Change paragraph:
+        document.getElementById("myP").innerHTML = "My first paragraph.";
+
+    </script>
+</body>
+
+</html>

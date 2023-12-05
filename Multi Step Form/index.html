@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" href="script.js"> -->
+</head>
+
+<body onload="showTab(current);">
+    <!-- <h1>Creating Multi step form using js</h1 -->
+    <div id="container" class="container">
+        <form action="" id="regForm">
+            <ul id="progress">
+                <li class="active" id="account">Account</li>
+                <li id="personal">Personal</li>
+                <li id="contact">Contact</li>
+            </ul>
+            <div class="tab">
+                <input type="text" name="uname" placeholder="Enter user name" oninput="this.className=''" id="">
+                <input type="password" name="uname" placeholder="Enter password" oninput="this.className=''" id="">
+                <input type="password" name="uname" placeholder="Confirm password" oninput="this.className=''" id="">
+            </div>
+            <div class="tab">
+                <input type="text" name="fname" placeholder="Enter first name" oninput="this.className=''" id="">
+                <input type="text" name="lname" placeholder="Enter your lastname" oninput="this.className=''" id="">
+                <input type="text" name="dob" placeholder="Date of Birth" oninput="this.className=''" id="">
+            </div>
+            <div class="tab">
+                <input type="text" name="addr" placeholder="Enter Address" oninput="this.className=''" id="">
+                <input type="email" name="email" placeholder="Enter email" oninput="this.className=''" id="">
+                <input type="number" name="mob" placeholder="Enter mobile no" oninput="this.className=''" id="">
+            </div>
+            <div style="overflow: hidden;">
+                <div style="float: right;">
+                    <button onclick="nextPrev(-1);" type="button" id="prev">Previous</button>
+                    <button onclick="nextPrev(1);" type="button" id="next">Next</button>
+                    <!-- id="submitBtn" onclick="submitForm()" -->
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>

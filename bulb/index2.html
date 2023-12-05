@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Making a bulb on off using js</h1>
+<!-- 1st way
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button> -->
+
+<!-- 2nd way -->
+
+    <button type="button" class="btn" onclick="onbulb()">ON BULB</button>
+    <img src="pic_bulboff.gif" id="myimg" alt="">
+    <button type="button" class="btn" onclick="offbulb()">OFF BULB</button>
+    <script>
+        onbulb = () => {
+            document.getElementById('myimg').src='pic_bulbon.gif'
+        }
+
+        offbulb = () => {
+            document.getElementById('myimg').src='pic_bulboff.gif'
+        }
+    </script>
+
+</body>
+
+</html>
